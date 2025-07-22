@@ -80,6 +80,7 @@ function removeFromBag(itemId) {
   displayBagSummary();
 }
 
+
 function generateItemHTML(item) {
   return `
   <div class="bag-item-container">

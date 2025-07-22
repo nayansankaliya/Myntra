@@ -15,6 +15,12 @@ function addToBag(itemId) {
   displayBagIcon();
 }
 
+function toggleMobileMenu() {
+  const nav = document.getElementById("main-nav");
+  nav.classList.toggle("show");
+}
+
+
 function displayBagIcon() {
   let bagItemCountElement = document.querySelector('.bag-item-count');
   if (bagItems.length > 0) {
