@@ -105,7 +105,7 @@ const items = [
     {
         id: '008',
         image: 'images/8.jpg',
-        company: 'Nivea',
+        company: 'NIVEA',
         item_name: 'Men Fresh Deodrant 150ml',
         original_price: 285,
         current_price: 142,
