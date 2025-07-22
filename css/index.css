@@ -93,7 +93,7 @@ header {
     align-items: center;
 }
 
-/* Main section */
+
 .banner_container {
     margin: 40px 0;
 }
@@ -279,7 +279,7 @@ a.action_container:link {
     color: black;
 }
 
-/* Mobile Navigation Styles */
+
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -294,7 +294,6 @@ a.action_container:link {
     font-size: 28px;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     header {
         flex-wrap: wrap;

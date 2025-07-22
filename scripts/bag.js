@@ -21,7 +21,7 @@ function displayBagSummary() {
   });
 
   let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEES;
-  
+
 
   bagSummaryElement.innerHTML = `
     <div class="bag-details-container">
@@ -49,6 +49,16 @@ function displayBagSummary() {
   </button>
   `;
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.getElementById("menu-icon");
+  const navBar = document.getElementById("navbar");
+
+  menuIcon.addEventListener("click", () => {
+    navBar.classList.toggle("active");
+    menuIcon.textContent = navBar.classList.contains("active") ? "close" : "menu";
+  });
+});
+
 
 function loadBagItemObjects() {
   console.log(bagItems);
