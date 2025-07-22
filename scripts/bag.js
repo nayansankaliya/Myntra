@@ -81,7 +81,8 @@ function removeFromBag(itemId) {
 }
 
 function generateItemHTML(item) {
-  return `<div class="bag-item-container">
+  return `
+  <div class="bag-item-container">
     <div class="item-left-part">
       <img class="bag-item-img" src="/${item.image}">
     </div>
@@ -102,6 +103,6 @@ function generateItemHTML(item) {
       </div>
     </div>
 
-    <div class="remove-from-cart" onclick="removeFromBag(${item.id})">X</div>
+    <div class="remove-from-cart" onclick="removeFromBag(${item.id})">×</div>
   </div>`;
 }
