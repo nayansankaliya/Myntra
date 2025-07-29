@@ -117,3 +117,17 @@ function generateItemHTML(item) {
     <div class="remove-from-cart" onclick="removeFromBag(${item.id})">×</div>
   </div>`;
 }
+document.querySelectorAll('.action_container').forEach(container => {
+  const name = container.querySelector('.action_name')?.textContent.trim();
+  if (name === 'Profile') {
+    container.addEventListener('click', openPopup);
+  }
+});
+
+function openPopup() {
+  document.getElementById('popup').style.display = 'flex';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
