@@ -120,8 +120,8 @@ header {
 }
 
 
-.popup-buttons .signin-btn:hover,
-.popup-buttons .signup-btn:hover {
+.popup-buttons .signin-btn:active,
+.popup-buttons .signup-btn:active {
   background-color: #9c3e90;
   transform: scale(1.05);
 }
@@ -308,7 +308,7 @@ header {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-add-bag:hover {
+.btn-add-bag:active {
   background-color: #218838;
   transform: scale(1.05);
 }
