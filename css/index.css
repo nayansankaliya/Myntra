@@ -81,16 +81,75 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content h2 {
+  margin-bottom: 20px;
+}
+
+.popup-buttons .signin-btn,
+.popup-buttons .signup-btn {
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(163, 73, 150);
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.popup-buttons .signin-btn:hover,
+.popup-buttons .signup-btn:hover {
+  background-color: #9c3e90;
+  transform: scale(1.05);
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
 .action_bar {
     display: flex;
     min-width: 200px;
     justify-content: space-evenly;
+    margin-left: 25px;
 }
 
 .action_container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 
@@ -237,21 +296,22 @@ header {
 }
 
 .btn-add-bag {
-    margin-top: 8px;
-    font-size: 18px;
-    width: 100%;
-    background-color: lightgreen;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
+  margin-top: 8px;
+  font-size: 13px;
+  width: 100%;
+  background-color: #28a745;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-add-bag:hover {
-    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.05);
+  background-color: #218838;
+  transform: scale(1.05);
 }
 
 .bag-item-count {
