@@ -169,7 +169,7 @@ hr {
 }
 
 .bag-summary {
-  vertical-align: top;
+  vertical-align: bottom;
   display: inline-block;
   width: 35%;
   padding: 24px 0 0 16px;
