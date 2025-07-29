@@ -371,7 +371,7 @@ a.action_container:link {
         position: relative;
     }
     main {
-    margin-top: 85px; 
+    margin-top: 75px; 
 }
 
     .logo_container {
@@ -487,7 +487,7 @@ a.action_container:link {
 
 @media screen and (max-width: 480px) {
     main {
-    margin-top: 85px; 
+    margin-top: 75px; 
 }
     .nav_bar a {
         font-size: 10px;
