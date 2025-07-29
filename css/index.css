@@ -6,13 +6,23 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     background-color: #ffffff;
     height: 80px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #b6b1b1;
+    padding: 0 4%;
 }
+main {
+    margin-top: 80px; 
+}
+
 
 
 .myntra_home {
@@ -360,6 +370,9 @@ a.action_container:link {
         padding: 10px;
         position: relative;
     }
+    main {
+    margin-top: 100px; 
+}
 
     .logo_container {
         margin-left: 10px;
@@ -473,6 +486,9 @@ a.action_container:link {
 }
 
 @media screen and (max-width: 480px) {
+    main {
+    margin-top: 120px; 
+}
     .nav_bar a {
         font-size: 10px;
     }
