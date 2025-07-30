@@ -55,6 +55,9 @@ header {
   font-weight: 600;
   font-size: 14px;
 }
+sup{
+      color: #ff3f6c;
+}
 
 .search_bar {
   display: flex;

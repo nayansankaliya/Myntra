@@ -132,7 +132,7 @@ main {
 
 .popup-buttons .signin-btn:active,
 .popup-buttons .signup-btn:active {
-  background-color: #9c3e90;
+  background-color: #ff3f6c;
   transform: scale(1.05);
 }
 

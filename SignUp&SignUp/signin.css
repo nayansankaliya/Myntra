@@ -55,3 +55,9 @@ body {
 #signin-form button:hover {
     background:rgb(14, 160, 19);
 }
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
