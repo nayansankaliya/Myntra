@@ -2,10 +2,10 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     event.preventDefault();
 
 
-    const username = document.getElementById("username").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const contact = document.getElementById("contact").value.trim();
-    const password = document.getElementById("password").value.trim();
+    const username = document.getElementById("username");
+    const email = document.getElementById("email");
+    const contact = document.getElementById("contact");
+    const password = document.getElementById("password");
 
 
     document.getElementById('error-name').innerHTML = '';
