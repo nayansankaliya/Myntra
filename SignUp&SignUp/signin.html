@@ -12,13 +12,17 @@
     <div class="signin-container">
         <form id="signin-form">
             <h1>SignIn</h1>
-            <label for="Email">Email</label>
-            <input id="email" type="email" placeholder="Enter Email" autocomplete="off">
-            <span id="error-email" class="error"></span>
+            <div class="email">
+                <label for="Email">Email</label>
+                <input id="email" type="email" placeholder="Enter Email">
+                <span id="error-email" class="error"></span>
 
-            <label for="password">password</label>
-            <input id="password" type="password" placeholder="Enter Password">
-            <span id="error-password" class="error"></span>
+            </div>
+            <div class="password">
+                <label for="password">password</label>
+                <input id="password" type="password" placeholder="Enter Password">
+                <span id="error-password" class="error"></span>
+            </div>
 
             <button id="btn-submit" type="submit">Submit</button>
         </form>

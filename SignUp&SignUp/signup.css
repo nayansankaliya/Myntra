@@ -21,6 +21,18 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
+.name{
+    height:90px;
+}
+.email{
+    height:90px;
+}
+.contact{
+    height:90px;
+}
+.password{
+    height:90px;
+}
 
 #signup-form label {
     display: inline-block;
@@ -47,7 +59,7 @@ body {
     border: none;
     border-radius: 8px;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
     cursor: pointer;
     font-weight: 700;                   
 }
@@ -57,8 +69,8 @@ body {
 }
 
 .error {
+    display:block;
+    margin: 0;
     color: red;
     font-size: 12px;
-    margin-top: 5px;
-    display: block;
 }
