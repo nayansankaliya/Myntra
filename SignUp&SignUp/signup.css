@@ -21,16 +21,7 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
-.name{
-    height:90px;
-}
-.email{
-    height:90px;
-}
-.contact{
-    height:90px;
-}
-.password{
+.name,.email,.contact,.password{
     height:90px;
 }
 
