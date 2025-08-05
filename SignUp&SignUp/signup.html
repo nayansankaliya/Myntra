@@ -2,74 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="shortcut icon" href="/images/myntra.svg" type="image/x-icon">
-    <title>SignUp</title>
+    <link rel="shortcut icon" href="/images/myntra.svg" type="image/x-icon" />
+    <title>Sign Up</title>
 </head>
 
 <body>
     <header>
         <div class="logo_container">
-            <a href="#"><img class="myntra_home" src="/images/myntra_logo.webp" alt="Myntra Home"></a>
+            <a href="#"><img class="myntra_home" src="/images/myntra_logo.webp" alt="Myntra Home" /></a>
         </div>
         <nav class="nav_bar" id="main-nav">
             <a href="#">Men</a>
             <a href="#">Women</a>
             <a href="#">Kids</a>
             <a href="#">Home</a>
-            <a href="#">Studio</a>
+            <a href="3">Beauty</a>
+            <a href="#">Genz</a>
+            <a href="#">Studio <sup>New</sup></a>
         </nav>
 
         <div class="search_bar">
             <span class="material-symbols-outlined search_icon">search</span>
-            <input class="search_input" placeholder="Search for products, brands and more">
+            <input class="search_input" placeholder="Search for products, brands and more" />
         </div>
 
+        <div class="action_bar">
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
 
-        <div class="action_container">
-            <span class="material-symbols-outlined action_icon">favorite</span>
-            <span class="action_name">Wishlist</span>
-        </div>
-
-        <a class="action_container bag" href="#">
-            <span class="material-symbols-outlined action_icon">shopping_bag</span>
-            <span class="action_name">Bag</span>
-        </a>
+            <a class="action_container bag" href="#">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+            </a>
         </div>
     </header>
-    <div class="signup-container">
-        <form action="" id="signup-form">
-            <h1>SignUp</h1>
-            <div class="name">
-                <label for="Name">Name</label><br>
-                <input id="username" type="text" placeholder="Enter Full Name" autocomplete="off"><br>
-                <span id="error-name" class="error"></span>
-            </div>
 
-            <div class="email"><label for="Email">Email</label><br>
-                <input id="email" type="Email" placeholder="Enter Email"><br>
-                <span id="error-email" class="error"></span>
-            </div>
+    <main class="signup-wrapper">
+        <div class="signup-container">
+            <form id="signup-form" novalidate>
+                <h1>Sign Up</h1>
 
-            <div class="contact">
-                <label for="contact">contact No.</label><br>
-                <input id="contact" type="tel" placeholder="Enter Contact No" autocomplete="off"><br>
-                <span id="error-contact" class="error"></span>
-            </div>
+                <div class="form-group name">
+                    <label for="username">Full Name</label>
+                    <input id="username" type="text" placeholder="Enter Full Name" autocomplete="off" required />
+                    <span id="error-name" class="error"></span>
+                </div>
 
-            <div class="password">
-                <label for="password">Password</label><br>
-                <input id="password" type="password" placeholder="Enter password"><br>
-                <span id="error-password" class="error"></span>
-            </div>
+                <div class="form-group email">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter Email" required />
+                    <span id="error-email" class="error"></span>
+                </div>
 
-            <button id="btn-submit">Submit</button>
-        </form>
-    </div>
+                <div class="form-group contact">
+                    <label for="contact">Contact No.</label>
+                    <input id="contact" type="tel" placeholder="Enter Contact No" pattern="[0-9]{10}" required />
+                    <span id="error-contact" class="error"></span>
+                </div>
+
+                <div class="form-group password">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Enter Password" required />
+                    <span id="error-password" class="error"></span>
+                </div>
+
+                <button type="submit" id="btn-submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>CUSTOMER POLICIES</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">T&C</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Track Orders</a>
+                <a href="#">Shipping</a>
+                <a href="#">Cancellation</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Grievance Redressal</a>
+            </div>
+            <div class="footer_column">
+                <h3>USEFUL LINKS</h3>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Site Map</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Whitehat</a>
+                <a href="#">Cleartrip</a>
+                <a href="#">Myntra Global</a>
+            </div>
+        </div>
+        <hr />
+        <div class="copyright">
+            © 2025 www.myntra.com. All rights reserved.
+        </div>
+    </footer>
+
     <script src="signup.js"></script>
 </body>
 
