@@ -23,8 +23,6 @@ main {
     margin-top: 80px; 
 }
 
-
-
 .myntra_home {
     height: 45px;
 }
@@ -91,60 +89,61 @@ main {
     border-radius: 0 4px 4px 0;
 }
 
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
+.profile-container {
+  position: relative; 
+}
+
+.profile-overlay {
   display: none;
-  justify-content: center;
-  align-items: center;  
-}
-
-.popup-content {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 12px;
-  text-align: center;
-  position: relative;
-}
-
-.popup-content h2 {
-  margin-bottom: 20px;
-}
-
-.popup-buttons .signin-btn,
-.popup-buttons .signup-btn {
-  border: none;
-  border-radius: 25px;
-  background-color: rgb(163, 73, 150);
-  width: 120px;
-  height: 40px;
-  cursor: pointer;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-
-.popup-buttons .signin-btn:active,
-.popup-buttons .signup-btn:active {
-  background-color: #ff3f6c;
-  transform: scale(1.05);
-}
-
-
-.close-btn {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 20px;
-  cursor: pointer;
+  top: 100%; 
+  background-color: white;
+  z-index: 1003;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  margin-top: 10px;
 }
 
+
+.overlay-content h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.overlay-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile-container:hover .profile-overlay {
+    display: flex;
+}
+
+.profile-btn {
+    background-color: #ff3f6c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.profile-btn:hover {
+    background-color: #e6355f;
+}
+
+.bag{
+    color: black;
+}
 
 
 .action_bar {
@@ -153,14 +152,12 @@ main {
     justify-content: space-evenly;
     margin-left: 25px;
 }
-
 .action_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
 }
-
 
 .banner_container {
     margin: 40px 0;
@@ -308,19 +305,14 @@ main {
   margin-top: 8px;
   font-size: 13px;
   width: 100%;
-  background-color: #28a745;
+  background-color:#e6355f;
   border: none;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
   color: white;
   font-weight: 600;
   transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-add-bag:active {
-  background-color: #218838;
-  transform: scale(1.05);
 }
 
 .bag-item-count {

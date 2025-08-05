@@ -29,7 +29,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         isValid = false;
     }
 
-    if (isValid) {
-        window.location.href = "signin.html";
+    if (isValid) {  
+        window.location.href = "../index.html";
     }
 });
