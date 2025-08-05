@@ -59,3 +59,21 @@ function displayItemsOnHomePage() {
 }
 
 
+  const profileContainer = document.querySelector('.profile-container');
+  const profileOverlay = document.querySelector('.profile-overlay');
+
+  let overlayVisible = false;
+
+  profileContainer.addEventListener('mouseenter', () => {
+    profileOverlay.style.display = 'flex';
+    overlayVisible = true;
+  });
+
+  profileContainer.addEventListener('mouseleave', (e) => {
+    setTimeout(() => {
+      if (!profileContainer.matches(':hover')) {
+        profileOverlay.style.display = 'none';
+        overlayVisible = false;
+      }
+    }, 100);
+  });

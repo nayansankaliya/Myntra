@@ -120,9 +120,9 @@ main {
     margin-bottom: 20px;
 }
 
-.profile-container:hover .profile-overlay {
+/* .profile-container:hover .profile-overlay {
     display: flex;
-}
+} */
 
 .profile-btn {
     background-color: #ff3f6c;
@@ -144,7 +144,6 @@ main {
 .bag{
     color: black;
 }
-
 
 .action_bar {
     display: flex;
