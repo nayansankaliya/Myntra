@@ -50,8 +50,8 @@ const items = [
         company: 'ADIDAS',
         item_name: 'Indian Cricket ODI Jersey',
         original_price: 999,
-        current_price: 999,
-        discount_percentage: 0,
+        current_price: 849,
+        discount_percentage: 15,
         return_period: 14,
         delivery_date: '25 Aug 2025',
         rating: {
@@ -80,8 +80,8 @@ const items = [
         company: 'Nike',
         item_name: 'Men ReactX Running Shoes',
         original_price: 14995,
-        current_price: 14995,
-        discount_percentage: 0,
+        current_price: 11996,
+        discount_percentage: 20,
         return_period: 14,
         delivery_date: '25 Aug 2025',
         rating: {
