@@ -62,7 +62,7 @@ main {
 }
 
 .nav_bar a sup {
-    color: #ff3f6c;
+    color: #f54e77;
     font-size: 9px;
 }
 
@@ -109,7 +109,7 @@ main {
   border-radius: 8px;
   width: 220px;
   text-align: center;
-  margin-top: 12px;
+  margin-top: 4px;
 }
 
 
@@ -127,7 +127,7 @@ main {
 
 
 .profile-btn {
-    background-color: #ff3f6c;
+    background-color: #f54e77;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -159,6 +159,7 @@ main {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 16px;
 }
 
 .banner_container {
@@ -171,7 +172,7 @@ main {
 
 
 .bag-item-count {
-  background-color: #ff3f6c;
+  background-color: #f54e77;
   color: white;
   font-size: 10px;
   padding: 1px 6px;
@@ -253,7 +254,7 @@ main {
   border-radius: 2px;
   border-width: 0px;
   padding: 10px 16px;
-  background-color: rgb(255, 63, 108);
+  background-color:#f54e77;
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
