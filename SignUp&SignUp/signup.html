@@ -50,21 +50,27 @@
             <form id="signup-form" novalidate>
                 <h1>Sign Up</h1>
 
-                <div class="form-group name">
-                    <label for="username">Full Name</label>
-                    <input id="username" type="text" placeholder="Enter Full Name"/>
-                    <span id="error-name" class="error"></span>
+                <div class="form-group fname">
+                    <label for="fname">First Name</label>
+                    <input id="fname" type="text" placeholder="Enter First Name" autocomplete="off"/>
+                    <span id="error-fname" class="error"></span>
+                </div>
+
+                <div class="form-group lname">
+                    <label for="lname">Last Name</label>
+                    <input id="lname" type="text" placeholder="Enter Last Name" autocomplete="off"/>
+                    <span id="error-lname" class="error"></span>
                 </div>
 
                 <div class="form-group email">
                     <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="Enter Email" />
+                    <input id="email" type="email" placeholder="Enter Email" autocomplete="off" />
                     <span id="error-email" class="error"></span>
                 </div>
 
                 <div class="form-group contact">
-                    <label for="contact">Contact No.</label>
-                    <input id="contact" type="tel" placeholder="Enter Contact No" pattern="[0-9]{10}" />
+                    <label for="contact">Mobile No.</label>
+                    <input id="contact" type="tel" placeholder="Enter Mobile No" pattern="[0-9]{10}" />
                     <span id="error-contact" class="error"></span>
                 </div>
 
@@ -74,9 +80,9 @@
                     <span id="error-password" class="error"></span>
                 </div>
 
-                <p class="text">Already have an account ? <a href="/SignUp&SignUp/signin.html">Sign In</a></p>
-
                 <button type="submit" id="btn-submit">Submit</button>
+
+                <p class="text">Already have an account ? <a href="/SignUp&SignUp/signin.html">Sign In</a></p>
             </form>
         </div>
     </main>

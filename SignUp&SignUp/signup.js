@@ -1,19 +1,22 @@
 document.getElementById("btn-submit").addEventListener("click", function (event) {
     event.preventDefault();
 
-    const username = document.getElementById("username").value.trim();
+    const fname = document.getElementById("fname").value.trim();
+    const lname = document.getElementById("lname").value.trim();
     const email = document.getElementById("email").value.trim().toLowerCase();
     const contact = document.getElementById("contact").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    document.getElementById('error-name').innerHTML = '';
+    document.getElementById('error-fname').innerHTML = '';
+    document.getElementById('error-lname').innerHTML = '';
     document.getElementById('error-email').innerHTML = '';
     document.getElementById('error-contact').innerHTML = '';
     document.getElementById('error-password').innerHTML = '';
 
-    if (username === '' && email === '' && contact === '' && password === '') {
+    if (fname === '' && lname === '' && email === '' && contact === '' && password === '') {
         const errorMsg = 'Please fill all the fields';
-        document.getElementById('error-name').innerHTML = errorMsg;
+        document.getElementById('error-fname').innerHTML = errorMsg;
+        document.getElementById('error-lname').innerHTML = errorMsg;
         document.getElementById('error-email').innerHTML = errorMsg;
         document.getElementById('error-contact').innerHTML = errorMsg;
         document.getElementById('error-password').innerHTML = errorMsg;
@@ -22,8 +25,13 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
 
     let isValid = true;
 
-    if (username === '') {
-        document.getElementById('error-name').innerHTML = 'Please enter name';
+    if (fname === '') {
+        document.getElementById('error-fname').innerHTML = 'Please enter first name';
+        isValid = false;
+    }
+
+     if (lname === '') {
+        document.getElementById('error-lname').innerHTML = 'Please enter last name';
         isValid = false;
     }
 
@@ -55,7 +63,8 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
 
     if (isValid) {
         const userData = {
-            username,
+            fname,
+            lname,
             email,
             contact,
             password
