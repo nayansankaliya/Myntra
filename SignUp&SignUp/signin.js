@@ -32,7 +32,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     const storedEmail = storedUser.email.trim().toLowerCase();
 
     if (emailInput !== storedEmail) {
-        document.getElementById("error-email").innerText = "Email doesn't match our records.";
+        document.getElementById("error-email").innerText = "Email doesn't match  records.";
         return;
     }
 
