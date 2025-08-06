@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/* Header CSS */
+
 header {
     position: fixed;
     top: 0;
@@ -19,8 +21,9 @@ header {
     border-bottom: 1px solid #b6b1b1;
     padding: 0 4%;
 }
+
 main {
-    margin-top: 80px; 
+    margin-top: 80px;
 }
 
 .myntra_home {
@@ -90,21 +93,21 @@ main {
 }
 
 .profile-container {
-  position: relative; 
+    position: relative;
 }
 
 .profile-overlay {
-  display: none;
-  position: absolute;
-  top: 100%; 
-  background-color: white;
-  z-index: 1003;
-  padding: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  width: 220px;
-  text-align: center;
-  margin-top: 2px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    z-index: 1003;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    margin-top: 2px;
 }
 
 
@@ -138,31 +141,40 @@ main {
     background-color: #e6355f;
 }
 
-.bag{
-    color: black;
-}
-
 .action_bar {
     display: flex;
     min-width: 200px;
     justify-content: space-evenly;
     margin-left: 25px;
 }
+
 .action_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
     margin-top: 16px;
+    color: black;
+}
+.bag-item-count {
+    background-color: #f54e77;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-.banner_container {
-    margin: 40px 0;
-}
-
-.banner_image {
-    width: 100%;
-}
+/* Main CSS */
 
 .category_heading {
     text-transform: uppercase;
@@ -270,37 +282,23 @@ main {
 }
 
 .btn-add-bag {
-  margin-top: 8px;
-  font-size: 13px;
-  width: 100%;
-  background-color:#f54e77;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 8px;
+    font-size: 13px;
+    width: 100%;
+    background-color: #f54e77;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.bag-item-count {
-    background-color:#f54e77;
-    white-space: nowrap;
-    text-align: center;
-    line-height: 18px;
-    padding: 0 6px;
-    height: 18px;
-    position: relative;
-    border-radius: 50%;
-    font-size: 12px;
-    color: #fff;
-    left: 13px;
-    top: -44px;
-    font-weight: 700;
-    cursor: pointer;
-}
+/* Footer CSS */
+
 .footer_container {
-    
+
     padding: 30px 0px 40px 0px;
     background: #FAFBFC;
     display: flex;
@@ -330,15 +328,3 @@ main {
     text-align: center;
     padding: 15px;
 }
-
-.action_container {
-    text-decoration: none;
-}
-
-a.action_container:link {
-    color: black;
-}
-
-
-
-

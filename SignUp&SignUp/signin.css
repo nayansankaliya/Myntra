@@ -11,6 +11,8 @@ body {
     padding-top: 100px;
 }
 
+/* Header CSS */
+
 header {
     position: fixed;
     top: 0;
@@ -93,10 +95,6 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
-.bag{
-    color: black;
-}
-
 .action_bar {
     display: flex;
     min-width: 200px;
@@ -109,7 +107,10 @@ header {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
+
+/* Main CSS */
 
 .signin-wrapper {
     display: flex;
@@ -177,6 +178,8 @@ header {
     margin-top: 4px;
 }
 
+/* Footer CSS */
+
 .footer_container {
     
     padding: 30px 0px 40px 0px;
@@ -209,12 +212,6 @@ header {
     padding: 15px;
 }
 
-.action_container {
-    text-decoration: none;
-}
 
-a.action_container:link {
-    color: black;
-}
 
 

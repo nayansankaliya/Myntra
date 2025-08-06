@@ -11,6 +11,8 @@ body {
     padding-top: 100px;
 }
 
+/* Header CSS */
+
 header {
     position: fixed;
     top: 0;
@@ -25,7 +27,6 @@ header {
     border-bottom: 1px solid #b6b1b1;
     padding: 0 4%;
 }
-
 
 .myntra_home {
     height: 45px;
@@ -111,6 +112,8 @@ header {
     text-decoration: none;
 }
 
+/* Main CSS */
+
 .signup-wrapper {
     display: flex;
     justify-content: center;
@@ -177,6 +180,8 @@ header {
     margin-top: 4px;
 }
 
+/* Footer CSS */
+
 .footer_container {
     
     padding: 30px 0px 40px 0px;
@@ -209,12 +214,5 @@ header {
     padding: 15px;
 }
 
-.action_container {
-    text-decoration: none;
-}
-
-a.action_container:link {
-    color: black;
-}
 
 
