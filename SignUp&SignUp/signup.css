@@ -25,9 +25,7 @@ header {
     border-bottom: 1px solid #b6b1b1;
     padding: 0 4%;
 }
-main {
-    margin-top: 80px; 
-}
+
 
 .myntra_home {
     height: 45px;
@@ -117,7 +115,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 250px);
 }
 
 .signup-container {
