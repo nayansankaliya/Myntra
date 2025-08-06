@@ -15,10 +15,6 @@ function addToBag(itemId) {
   displayBagIcon();
 }
 
-function toggleMobileMenu() {
-  const nav = document.getElementById("main-nav");
-  nav.classList.toggle("show");
-}
 
 
 function displayBagIcon() {

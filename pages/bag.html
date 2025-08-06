@@ -16,11 +16,7 @@
       <a href="#"><img class="myntra_home" src="/images/myntra_logo.webp" alt="Myntra Home"></a>
     </div>
 
-    <div class="hamburger-menu" id="hamburger">
-      <span class="material-symbols-outlined" id="menu-icon">menu</span>
-    </div>
-
-    <nav class="nav_bar" id="navbar">
+    <nav class="nav_bar" id="main-nav">
       <a href="#">Men</a>
       <a href="#">Women</a>
       <a href="#">Kids</a>
@@ -35,33 +31,33 @@
       <input class="search_input" placeholder="Search for products, brands and more">
     </div>
 
-    <div id="popup" class="popup-overlay">
-      <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">×</span>
-        <h2>Welcome</h2>
-        <div class="popup-buttons">
-          <a href="/SignUp&SignUp/signup.html"><button class="signup-btn">Sign Up</button></a>
-          <a href="/SignUp&SignUp/signin.html"><button class="signin-btn">Sign In</button></a>
-        </div>
-      </div>
-    </div>
-
     <div class="action_bar">
-      <div class="action_container">
+      <div class="action_container profile-container">
         <span class="material-symbols-outlined action_icon">person</span>
         <span class="action_name">Profile</span>
+        <div class="profile-overlay">
+          <div class="overlay-content">
+            <h2>Welcome</h2>
+            <p>To access your account</p>
+            <a href="/SignUp&SignUp/signup.html"><button class="profile-btn">Sign Up</button></a>
+            <a href="/SignUp&SignUp/signin.html"><button class="profile-btn">Sign In</button></a>
+          </div>
+        </div>
       </div>
+
       <div class="action_container">
         <span class="material-symbols-outlined action_icon">favorite</span>
         <span class="action_name">Wishlist</span>
       </div>
-      <div class="action_container">
+
+      <a class="action_container bag" href="">
         <span class="material-symbols-outlined action_icon">shopping_bag</span>
         <span class="action_name">Bag</span>
         <span class="bag-item-count">0</span>
-      </div>
+      </a>
     </div>
   </header>
+
 
   <main>
     <div class="bag-page">
@@ -70,7 +66,7 @@
     </div>
   </main>
 
-  <footer>
+   <footer>
     <div class="footer_container">
       <div class="footer_column">
         <h3>ONLINE SHOPPING</h3>
@@ -82,7 +78,6 @@
         <a href="#">Gift Card</a>
         <a href="#">Myntra Insider</a>
       </div>
-
       <div class="footer_column">
         <h3>CUSTOMER POLICIES</h3>
         <a href="#">Contact US</a>
@@ -96,7 +91,6 @@
         <a href="#">Privacy policy</a>
         <a href="#">Grievance Redressal</a>
       </div>
-
       <div class="footer_column">
         <h3>USEFUL LINKS</h3>
         <a href="#">Blog</a>

@@ -13,93 +13,101 @@
 
 <body>
     <header>
-        <div class="logo_container">
-            <a href="#"><img class="myntra_home" src="/images/myntra_logo.webp" alt="Myntra Home"></a>
-        </div>
-        <nav class="nav_bar" id="main-nav">
-            <a href="#">Men</a>
-            <a href="#">Women</a>
-            <a href="#">Kids</a>
-            <a href="#">Home</a>
-            <a href="#">Studio <sup>New</sup></a>
-        </nav>
-
-        <div class="search_bar">
-            <span class="material-symbols-outlined search_icon">search</span>
-            <input class="search_input" placeholder="Search for products, brands and more">
-        </div>
-
-
-        <div class="action_container">
-            <span class="material-symbols-outlined action_icon">favorite</span>
-            <span class="action_name">Wishlist</span>
-        </div>
-
-        <a class="action_container bag" href="#">
-            <span class="material-symbols-outlined action_icon">shopping_bag</span>
-            <span class="action_name">Bag</span>
-        </a>
-        </div>
-    </header>
-    <div class="signin-container">
-        <form id="signin-form">
-            <h1>SignIn</h1>
-            <div class="email">
-                <label for="Email">Email</label>
-                <input id="email" type="email" placeholder="Enter Email">
-                <span id="error-email" class="error"></span>
-
-            </div>
-            <div class="password">
-                <label for="password">password</label>
-                <input id="password" type="password" placeholder="Enter Password">
-                <span id="error-password" class="error"></span>
-            </div>
-
-            <button id="btn-submit" type="submit">Submit</button>
-        </form>
+    <div class="logo_container">
+      <a href="#"><img class="myntra_home" src="/images/myntra_logo.webp" alt="Myntra Home"></a>
     </div>
-    <footer>
-        <div class="footer_container">
-            <div class="footer_column">
-                <h3>ONLINE SHOPPING</h3>
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Home & Living</a>
-                <a href="#">Beauty</a>
-                <a href="#">Gift Card</a>
-                <a href="#">Myntra Insider</a>
-            </div>
-            <div class="footer_column">
-                <h3>CUSTOMER POLICIES</h3>
-                <a href="#">Contact US</a>
-                <a href="#">FAQ</a>
-                <a href="#">T&C</a>
-                <a href="#">Terms Of Use</a>
-                <a href="#">Track Orders</a>
-                <a href="#">Shipping</a>
-                <a href="#">Cancellation</a>
-                <a href="#">Returns</a>
-                <a href="#">Privacy policy</a>
-                <a href="#">Grievance Redressal</a>
-            </div>
-            <div class="footer_column">
-                <h3>USEFUL LINKS</h3>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
-                <a href="#">Site Map</a>
-                <a href="#">Corporate Information</a>
-                <a href="#">Whitehat</a>
-                <a href="#">Cleartrip</a>
-                <a href="#">Myntra Global</a>
-            </div>
+
+    <nav class="nav_bar" id="main-nav">
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Kids</a>
+      <a href="#">Home</a>
+      <a href="#">Beauty</a>
+      <a href="#">Genz</a>
+      <a href="#">Studio <sup>New</sup></a>
+    </nav>
+
+    <div class="search_bar">
+      <span class="material-symbols-outlined search_icon">search</span>
+      <input class="search_input" placeholder="Search for products, brands and more">
+    </div>
+
+    <div class="action_bar">
+      <div class="action_container">
+        <span class="material-symbols-outlined action_icon">favorite</span>
+        <span class="action_name">Wishlist</span>
+      </div>
+
+      <a class="action_container bag" href="#">
+        <span class="material-symbols-outlined action_icon">shopping_bag</span>
+        <span class="action_name">Bag</span>
+      </a>
+    </div>
+  </header>
+  
+     <main class="signin-wrapper">
+        <div class="signin-container">
+            <form id="signin-form" novalidate>
+                <h1>Sign In</h1>
+
+                <div class="form-group email">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Enter Email" required />
+                    <span id="error-email" class="error"></span>
+                </div>
+
+                <div class="form-group password">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Enter Password" required />
+                    <span id="error-password" class="error"></span>
+                </div>
+
+                <button type="submit" id="btn-submit">Submit</button>
+            </form>
         </div>
-        <hr>
-        <div class="copyright">
-            © 2025 www.myntra.com. All rights reserved.
-        </div>
-    </footer>
+    </main>
+
+     <footer>
+    <div class="footer_container">
+      <div class="footer_column">
+        <h3>ONLINE SHOPPING</h3>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home & Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Gift Card</a>
+        <a href="#">Myntra Insider</a>
+      </div>
+      <div class="footer_column">
+        <h3>CUSTOMER POLICIES</h3>
+        <a href="#">Contact US</a>
+        <a href="#">FAQ</a>
+        <a href="#">T&C</a>
+        <a href="#">Terms Of Use</a>
+        <a href="#">Track Orders</a>
+        <a href="#">Shipping</a>
+        <a href="#">Cancellation</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Grievance Redressal</a>
+      </div>
+      <div class="footer_column">
+        <h3>USEFUL LINKS</h3>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Site Map</a>
+        <a href="#">Corporate Information</a>
+        <a href="#">Whitehat</a>
+        <a href="#">Cleartrip</a>
+        <a href="#">Myntra Global</a>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright">
+      © 2025 www.myntra.com. All rights reserved.
+    </div>
+  </footer>
     <script src="signin.js"></script>
 </body>
 

@@ -120,9 +120,6 @@ main {
     margin-bottom: 20px;
 }
 
-/* .profile-container:hover .profile-overlay {
-    display: flex;
-} */
 
 .profile-btn {
     background-color: #ff3f6c;
@@ -189,36 +186,7 @@ main {
     width: 250px;
 }
 
-.footer_container {
-    padding: 30px 0px 40px 0px;
-    background: #FAFBFC;
-    display: flex;
-    justify-content: space-evenly;
-}
 
-.footer_column {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer_column h3 {
-    color: #282c3f;
-    font-size: 14px;
-    margin-bottom: 25px;
-}
-
-.footer_column a {
-    color: #696b79;
-    font-size: 15px;
-    text-decoration: none;
-    padding-bottom: 5px;
-}
-
-.copyright {
-    color: #94969f;
-    text-align: center;
-    padding: 15px;
-}
 
 .items-container {
     width: 70%;
@@ -330,6 +298,37 @@ main {
     font-weight: 700;
     cursor: pointer;
 }
+.footer_container {
+    
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.copyright {
+    color: #94969f;
+    text-align: center;
+    padding: 15px;
+}
 
 .action_container {
     text-decoration: none;
@@ -340,162 +339,5 @@ a.action_container:link {
 }
 
 
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 1001;
-}
 
-.menu-toggle span {
-    font-size: 28px;
-}
 
-@media screen and (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        padding: 10px;
-        position: relative;
-    }
-    main {
-    margin-top: 75px; 
-}
-
-    .logo_container {
-        margin-left: 10px;
-    }
-
-    .nav_bar {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        z-index: 1000;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav_bar a {
-        padding: 15px 20px;
-        font-size: 14px;
-        border-bottom: 1px solid #eee;
-    }
-
-    .nav_bar.show {
-        display: flex;
-    }
-
-    .search_bar,
-    .action_bar {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .search_bar {
-        padding: 0 10px;
-    }
-
-    .action_bar {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    header {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 10px;
-    }
-
-    .logo_container,
-    .search_bar,
-    .action_bar {
-        margin: 10px 0;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-    }
-
-    .nav_bar {
-        flex-wrap: wrap;
-        min-width: unset;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .nav_bar a {
-        padding: 10px;
-        font-size: 12px;
-    }
-
-    .search_bar {
-        width: 90%;
-    }
-
-    .action_bar {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .items-container {
-        width: 90%;
-        margin: 20px auto;
-        justify-content: center;
-    }
-
-    .item-container {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .footer_container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer_column {
-        margin-bottom: 20px;
-    }
-
-    .copyright {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    main {
-    margin-top: 75px; 
-}
-    .nav_bar a {
-        font-size: 10px;
-    }
-
-    .category_heading {
-        font-size: 1.2em;
-        margin-left: 10px;
-    }
-
-    .btn-add-bag {
-        font-size: 16px;
-        padding: 5px;
-    }
-
-    .bag-item-count {
-        top: -30px;
-        left: 10px;
-    }
-}

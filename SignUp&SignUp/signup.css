@@ -18,43 +18,50 @@ header {
     right: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #ffffff;
     height: 80px;
-    padding: 0 4%;
-    border-bottom: 1px solid #b6b1b1;
-}
-
-.logo_container {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+    padding: 0 4%;
+}
+main {
+    margin-top: 80px; 
 }
 
 .myntra_home {
     height: 45px;
 }
 
+.logo_container {
+    margin-left: 4%;
+}
+
+.action_bar {
+    margin-right: 4%;
+}
+
 .nav_bar {
     display: flex;
-    min-width: 400px;
-    justify-content: space-between;
-    gap: 20px;
+    min-width: 500px;
+    justify-content: space-evenly;
 }
 
 .nav_bar a {
     font-size: 14px;
+    letter-spacing: .3px;
     color: #282c3f;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     padding: 28px 0;
-    border-bottom: 5px solid transparent;
+    border-bottom: 5px solid #ffffff;
 }
 
 .nav_bar a:hover {
     border-bottom: 4px solid #f54e77;
 }
+
 .nav_bar a sup {
     color: #ff3f6c;
     font-size: 9px;
@@ -62,41 +69,48 @@ header {
 
 .search_bar {
     height: 40px;
+    min-width: 200px;
     width: 30%;
     display: flex;
     align-items: center;
-    margin: 0 15px;
 }
 
 .search_icon {
-    height: 40px;
+    box-sizing: content-box;
+    height: 20px;
     padding: 10px;
+
     background-color: #f5f5f6;
     color: #282c3f;
+    font-weight: 300;
     border-radius: 4px 0 0 4px;
 }
 
 .search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
     flex-grow: 1;
     height: 40px;
-    border: none;
-    padding: 0 10px;
-    background-color: #f5f5f6;
+    border: 0;
     border-radius: 0 4px 4px 0;
+}
+
+.bag{
+    color: black;
 }
 
 .action_bar {
     display: flex;
-    gap: 20px;
+    min-width: 200px;
+    justify-content: space-evenly;
+    margin-left: 25px;
 }
-
 .action_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
-    color: black;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .signup-wrapper {
@@ -152,6 +166,7 @@ header {
     font-size: 16px;
     cursor: pointer;
     font-weight: 700;
+    margin-top: 9px;
 }
 
 #signup-form button:hover {
@@ -165,16 +180,16 @@ header {
 }
 
 .footer_container {
-    padding: 30px 5%;
-    background: #fafbfc;
+    
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 
 .footer_column {
-    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_column h3 {
@@ -184,42 +199,24 @@ header {
 }
 
 .footer_column a {
-    display: block;
     color: #696b79;
     font-size: 15px;
     text-decoration: none;
     padding-bottom: 5px;
 }
 
-.footer_column a:hover {
-    text-decoration: underline;
-}
-
-hr {
-    margin: 0;
-    border: none;
-    border-top: 1px solid #ddd;
-}
-
 .copyright {
     color: #94969f;
     text-align: center;
-    padding: 15px 0;
-    font-size: 14px;
+    padding: 15px;
 }
 
-@media (max-width: 768px) {
-    .nav_bar,
-    .search_bar,
-    .action_bar {
-        display: none;
-    }
-
-    header {
-        justify-content: center;
-    }
-
-    .signup-wrapper {
-        padding: 0 10px;
-    }
+.action_container {
+    text-decoration: none;
 }
+
+a.action_container:link {
+    color: black;
+}
+
+
