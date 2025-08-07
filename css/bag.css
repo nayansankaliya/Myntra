@@ -227,6 +227,22 @@ main {
 .priceDetail-base-discount {
   color: #03a685;
 }
+.original-price{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.discount-percentage{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.company{
+  font-weight: 700;
+}
 
 .price-footer {
   font-weight: 700;
