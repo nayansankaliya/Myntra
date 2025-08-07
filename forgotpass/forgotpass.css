@@ -113,14 +113,14 @@ header {
 
 /* Main CSS */
 
-.signin-wrapper {
+.forgotpass-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 250px);
 }
 
-.signin-container {
+.forgotpass-container {
     background: white;
     padding: 2rem;
     border-radius: 10px;
@@ -129,27 +129,26 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#signin-form h1 {
+#forgotpass-form h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.email,
-.password {
+.email {
     height: 70px;
 }
 
-#signin-form label {
+#forgotpass-form label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
-#signin-form input {
+#forgotpass-form input {
     width: 100%;
     font-size: 16px;
     padding: 10px;
@@ -157,19 +156,7 @@ header {
     border-radius: 5px;
 }
 
-.forgotpass-wrapper {
-    text-align: end;
-    margin-bottom: 5px;
-}
-
-.forgotpass {
-    color: #f54e77;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-
-#signin-form button {
+#forgotpass-form button {
     width: 100%;
     padding: 12px;
     background: #f54e77;
@@ -179,10 +166,10 @@ header {
     font-size: 16px;
     cursor: pointer;
     font-weight: 700;
-    margin-top: 9px;
+    margin-top: 12px;
 }
 
-#signin-form button:hover {
+#forgotpass-form button:hover {
     background: #e6355f;
 }
 

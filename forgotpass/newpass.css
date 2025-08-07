@@ -28,7 +28,6 @@ header {
     padding: 0 4%;
 }
 
-
 .myntra_home {
     height: 45px;
 }
@@ -95,6 +94,10 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
+.bag {
+    color: black;
+}
+
 .action_bar {
     display: flex;
     min-width: 200px;
@@ -108,19 +111,18 @@ header {
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    color: black;
 }
 
 /* Main CSS */
 
-.signin-wrapper {
+.newpass-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 250px);
 }
 
-.signin-container {
+.newpass-container {
     background: white;
     padding: 2rem;
     border-radius: 10px;
@@ -129,27 +131,27 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#signin-form h1 {
+#newpass-form h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.email,
+.newpass,
 .password {
     height: 70px;
 }
 
-#signin-form label {
+#newpass-form label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
-#signin-form input {
+#newpass-form input {
     width: 100%;
     font-size: 16px;
     padding: 10px;
@@ -157,19 +159,7 @@ header {
     border-radius: 5px;
 }
 
-.forgotpass-wrapper {
-    text-align: end;
-    margin-bottom: 5px;
-}
-
-.forgotpass {
-    color: #f54e77;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-
-#signin-form button {
+#newpass-form button {
     width: 100%;
     padding: 12px;
     background: #f54e77;
@@ -182,7 +172,7 @@ header {
     margin-top: 9px;
 }
 
-#signin-form button:hover {
+#newpass-form button:hover {
     background: #e6355f;
 }
 
@@ -205,7 +195,7 @@ header {
 /* Footer CSS */
 
 .footer_container {
-
+    margin-top: 25px;
     padding: 30px 0px 40px 0px;
     background: #FAFBFC;
     display: flex;

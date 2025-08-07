@@ -1,0 +1,30 @@
+document.getElementById("btn-submit").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value.trim().toLowerCase();
+
+    document.getElementById('error-email').innerHTML = '';
+
+
+    if (email === '') {
+        const errorMsg = 'Please enter email';
+        document.getElementById('error-email').innerHTML = errorMsg;
+        return;
+    }
+
+    let isValid = true;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email === '') {
+        document.getElementById('error-email').innerHTML = 'Please enter email';
+        isValid = false;
+    } else if (!emailRegex.test(email)) {
+        document.getElementById('error-email').innerHTML = 'Enter a valid email address';
+        isValid = false;
+    }
+
+
+    if (isValid) {
+        window.location.href = "./newpass.html";
+    }
+});
