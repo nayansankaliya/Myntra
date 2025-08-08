@@ -235,7 +235,7 @@ main {
     font-size: 12px;
 }
 .discount-percentage{
-    color: #ff905a;
+    color: #e80000;
     font-weight: 400;
     font-size: 12px;
     margin-left: 5px;
@@ -313,8 +313,7 @@ main {
 .delivery-details {
   margin-top: 5px;
   color: #282c3f;
-  font-size: 12px;
-  letter-spacing: -.1px;
+  font-size: 17px;
   margin-bottom: 8px;
   line-height: 15px;
 }

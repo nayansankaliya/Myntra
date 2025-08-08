@@ -200,8 +200,6 @@ main {
     width: 250px;
 }
 
-
-
 .items-container {
     width: 70%;
     margin: 40px 15%;
@@ -276,7 +274,7 @@ main {
 }
 
 .discount {
-    color: #ff905a;
+    color: #e80000;
     font-weight: 400;
     font-size: 12px;
     margin-left: 5px;
