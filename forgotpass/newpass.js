@@ -7,6 +7,8 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     document.getElementById('error-newpass').innerHTML = '';
     document.getElementById('error-password').innerHTML = '';
 
+    let isValid = true;
+
     if (newpass === '' && password === '') {
         const errorMsg = 'Please fill all the fields';
         document.getElementById('error-newpass').innerHTML = errorMsg;
@@ -14,11 +16,8 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         return;
     }
 
-    let isValid = true;
-
-
     if (newpass === '') {
-        document.getElementById('error-newpass').innerHTML = 'Please enter Password';
+        document.getElementById('error-newpass').innerHTML = 'Please enter new password';
         isValid = false;
     } else if (newpass.length < 6) {
         document.getElementById('error-newpass').innerHTML = 'Password must be at least 6 characters';
@@ -26,14 +25,25 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     }
 
     if (password === '') {
-        document.getElementById('error-password').innerHTML = 'Please enter password';
+        document.getElementById('error-password').innerHTML = 'Please confirm the password';
         isValid = false;
     } else if (password.length < 6) {
         document.getElementById('error-password').innerHTML = 'Password must be at least 6 characters';
         isValid = false;
     }
 
+    if (isValid && newpass !== password) {
+        document.getElementById('error-password').innerHTML = 'New Passwords and confirm password should be same';
+        isValid = false;
+    }
+
     if (isValid) {
+        const newPassword = {
+            password: newpass
+        };
+
+        localStorage.setItem('newPassword', JSON.stringify(newPassword));
+
         window.location.href = "../index.html";
     }
 });

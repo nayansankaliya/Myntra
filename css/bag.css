@@ -266,6 +266,10 @@ main {
   cursor: pointer;
 }
 
+.btn-place-order:active{
+ background-color: #e6355f;
+}
+
 .bag-item-container {
   margin-bottom: 8px;
   background: #fff;
