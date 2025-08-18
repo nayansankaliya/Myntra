@@ -11,8 +11,7 @@ body {
     padding-top: 100px;
 }
 
-/* Header CSS */
-
+/* ================================Header CSS================================== */
 header {
     position: fixed;
     top: 0;
@@ -27,6 +26,7 @@ header {
     border-bottom: 1px solid #b6b1b1;
     padding: 0 4%;
 }
+
 
 .myntra_home {
     height: 45px;
@@ -62,7 +62,7 @@ header {
 }
 
 .nav_bar a sup {
-    color:#f54e77;
+    color: #f54e77;
     font-size: 9px;
 }
 
@@ -94,34 +94,32 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
-.bag{
-    color: black;
-}
-
 .action_bar {
     display: flex;
     min-width: 200px;
     justify-content: space-evenly;
     margin-left: 25px;
 }
+
 .action_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    color: black;
 }
 
-/* Main CSS */
+/* ================================Main CSS================================== */
 
-.signup-wrapper {
+.forgotpass-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 250px);
 }
 
-.signup-container {
+.forgotpass-container {
     background: white;
     padding: 2rem;
     border-radius: 10px;
@@ -130,26 +128,26 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#signup-form h1 {
+#forgotpass-form h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.fname,.lname,.email,.contact,.password{
+.email {
     height: 70px;
 }
 
-#signup-form label {
+#forgotpass-form label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
 }
 
-#signup-form input {
+#forgotpass-form input {
     width: 100%;
     font-size: 16px;
     padding: 10px;
@@ -157,30 +155,31 @@ header {
     border-radius: 5px;
 }
 
-#signup-form button {
+#forgotpass-form button {
     width: 100%;
     padding: 12px;
-    background:#f54e77;
+    background: #f54e77;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
     font-weight: 700;
-    margin-top: 9px;
+    margin-top: 12px;
 }
 
-#signup-form button:hover {
+#forgotpass-form button:hover {
     background: #e6355f;
 }
 
-.text{
+.text {
     text-align: center;
     margin-top: 15px;
 }
-.text a{
+
+.text a {
     text-decoration: none;
-    color:  #f54e77;
+    color: #f54e77;
 }
 
 .error {
@@ -189,10 +188,9 @@ header {
     margin-top: 4px;
 }
 
-/* Footer CSS */
-
+/* ================================Footer CSS================================== */
 .footer_container {
-    margin-top: 25px;
+
     padding: 30px 0px 40px 0px;
     background: #FAFBFC;
     display: flex;
@@ -222,6 +220,3 @@ header {
     text-align: center;
     padding: 15px;
 }
-
-
-

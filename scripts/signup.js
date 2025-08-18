@@ -72,6 +72,6 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
 
         localStorage.setItem('myntraUser', JSON.stringify(userData));
 
-        window.location.href = "signin.html";
+        window.location.href = "../pages/signin.html";
     }
 });

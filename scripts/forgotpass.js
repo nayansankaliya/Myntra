@@ -25,6 +25,6 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
 
 
     if (isValid) {
-        window.location.href = "./newpass.html";
+        window.location.href = "../pages/newpass.html";
     }
 });

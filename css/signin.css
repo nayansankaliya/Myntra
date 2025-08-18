@@ -11,7 +11,7 @@ body {
     padding-top: 100px;
 }
 
-/* Header CSS */
+/* ================================Header CSS================================== */
 
 header {
     position: fixed;
@@ -111,7 +111,7 @@ header {
     color: black;
 }
 
-/* Main CSS */
+/* ================================Main CSS================================== */
 
 .signin-wrapper {
     display: flex;
@@ -202,7 +202,7 @@ header {
     margin-top: 4px;
 }
 
-/* Footer CSS */
+/* ================================Footer CSS================================== */
 
 .footer_container {
 

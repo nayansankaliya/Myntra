@@ -6,8 +6,7 @@
 }
 
 
-/* Header CSS */
-
+/* ================================Header CSS================================== */
 header {
     position: fixed;
     top: 0;
@@ -176,7 +175,7 @@ main {
     cursor: pointer;
 }
 
-/* Main CSS */
+/* ================================Main CSS================================== */
 
 .category_heading {
     text-transform: uppercase;
@@ -298,7 +297,7 @@ main {
     background: #e6355f;
 }
 
-/* Footer CSS */
+/* ================================Footer CSS================================== */
 
 .footer_container {
 
