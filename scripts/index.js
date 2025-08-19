@@ -15,12 +15,9 @@ function addToBag(itemId) {
   displayBagIcon();
 }
 
-
-
 function displayBagIcon() {
   let bagItemCountElement = document.querySelector('.bag-item-count');
   if (bagItems.length > 0) {
-    console.log('I am here');
     bagItemCountElement.style.visibility = 'visible';
     bagItemCountElement.innerText = bagItems.length;
   } else {
