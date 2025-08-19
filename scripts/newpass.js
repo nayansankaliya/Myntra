@@ -38,12 +38,14 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     }
 
     if (isValid) {
-        const newPassword = {
-            password: newpass
-        };
+        const storedUserRaw = localStorage.getItem('myntraUser');
+        if (storedUserRaw) {
+            const storedUser = JSON.parse(storedUserRaw);
+            storedUser.password = newpass;
+            localStorage.setItem('myntraUser', JSON.stringify(storedUser));
+        }
 
-        localStorage.setItem('newPassword', JSON.stringify(newPassword));
-
-        window.location.href = "../index.html";
+        window.location.href = "../pages/signin.html";
     }
+
 });

@@ -22,6 +22,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     if (!isValid) return;
 
     const storedUserRaw = localStorage.getItem('myntraUser');
+    
 
     if (!storedUserRaw) {
         document.getElementById("error-email").innerText = "No account found. Please sign up first.";
