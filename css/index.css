@@ -22,10 +22,6 @@ header {
     padding: 0 4%;
 }
 
-main {
-    margin-top: 80px;
-}
-
 .myntra_home {
     height: 45px;
 }
@@ -53,10 +49,6 @@ main {
     text-decoration: none;
     padding: 28px 0;
     border-bottom: 5px solid #ffffff;
-}
-
-.nav_bar a:hover {
-    border-bottom: 4px solid #f54e77;
 }
 
 .nav_bar a sup {
@@ -176,6 +168,10 @@ main {
 }
 
 /* ================================Main CSS================================== */
+
+main {
+    margin-top: 100px;
+}
 
 .category_heading {
     text-transform: uppercase;
@@ -330,3 +326,15 @@ main {
     text-align: center;
     padding: 15px;
 }
+
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #282c3f;
+}
+
+/* ================================Mobile Responsive================================== */

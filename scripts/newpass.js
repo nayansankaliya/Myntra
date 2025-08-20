@@ -25,7 +25,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     }
 
     if (password === '') {
-        document.getElementById('error-password').innerHTML = 'Please confirm the password';
+        document.getElementById('error-password').innerHTML = 'Please enter confirm the password';
         isValid = false;
     } else if (password.length < 6) {
         document.getElementById('error-password').innerHTML = 'Password must be at least 6 characters';
@@ -33,7 +33,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     }
 
     if (isValid && newpass !== password) {
-        document.getElementById('error-password').innerHTML = 'New Passwords and confirm password should be same';
+        document.getElementById('error-password').innerHTML = 'New  and confirm password should be same';
         isValid = false;
     }
 
