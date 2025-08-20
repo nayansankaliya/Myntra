@@ -1,4 +1,3 @@
-
 let bagItems;
 onLoad();
 
@@ -35,8 +34,7 @@ function displayItemsOnHomePage() {
     innerHtml += `
     <div class="item-container">
       <img class="item-image" src="${item.image}" alt="item image">
-      <div class="rating">
-          ${item.rating.stars} ⭐ | ${item.rating.count}
+      <div class="rating">          ${item.rating.stars} ⭐ | ${item.rating.count}
       </div>
       <div class="company-name">${item.company}</div>
       <div class="item-name">${item.item_name}</div>
