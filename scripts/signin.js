@@ -42,6 +42,6 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         return;
     }
 
-    alert("Login successful!");
+    confirm("Login successful!");
     window.location.href = "../index.html"; 
 });
