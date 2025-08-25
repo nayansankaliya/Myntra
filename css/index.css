@@ -327,6 +327,7 @@ main {
     padding: 15px;
 }
 
+/* Hamburger  */
 
 .hamburger {
     display: none;
@@ -335,6 +336,211 @@ main {
     cursor: pointer;
     font-size: 24px;
     color: #282c3f;
+    padding-top: 6px;
 }
 
 /* ================================Mobile Responsive================================== */
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        height: auto;
+    }
+
+    .myntra_home {
+        height: 37px;
+    }
+
+    .logo_container {
+        flex: 1 0 auto;
+        order: 1;
+    }
+
+    .search_bar {
+        order: 2;
+        flex: 2 1 60%;
+        width: 30px;
+    }
+
+
+    .hamburger {
+        display: block;
+        order: 3;
+        flex: 0 0 auto;
+        margin-left: 20px;
+    }
+
+    .nav_bar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_bar a {
+        width: 100%;
+        padding: 12px 0;
+        margin: 0;
+        padding-left: 25px;
+        border-top: 1px solid #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #282c3f;
+        box-sizing: border-box;
+    }
+
+    .nav_bar :last-child {
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav_bar.show {
+        display: flex;
+    }
+
+    .action_bar {
+        order: 4;
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background: #fff;
+    }
+
+    .action_bar.show {
+        display: flex;
+    }
+
+    .action_container {
+        flex: 1;
+        margin-top: 25px;
+    }
+
+    .items-container {
+        width: 100%;
+        margin: 20px auto;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .item-container {
+        width: 48%;
+        margin: 0 0 20px 0;
+        padding: 10px;
+        background: #fff;
+        border-radius: 8px;
+    }
+
+    .item-image {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .rating {
+        font-size: 13px;
+        margin-bottom: 6px;
+        color: #444;
+    }
+
+    .company-name {
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 4px;
+        color: #222;
+    }
+
+    .item-name {
+        font-size: 14px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    .price {
+        font-size: 14px;
+        margin-bottom: 8px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .current-price {
+        font-weight: 700;
+        color: #222;
+    }
+
+    .original-price {
+        text-decoration: line-through;
+        color: #888;
+        font-size: 13px;
+    }
+
+    .discount {
+        color: #e53935;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .btn-add-bag {
+        font-size: 13px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        margin-top: 6px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer_column {
+        width: 100%;
+    }
+
+    .footer_column h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #222;
+    }
+
+    .footer_column a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    .footer_column a:hover {
+        color: #e53935;
+    }
+
+    footer hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ddd;
+    }
+
+    .copyright {
+        font-size: 13px;
+        text-align: center;
+        padding: 12px 0;
+        color: #777;
+    }
+    .profile-overlay{
+        margin-left: 43px;
+        margin-top:11px;
+    }
+}

@@ -69,4 +69,19 @@ profileContainer.addEventListener('mouseleave', (e) => {
   }, 100);
 });
 
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navBar = document.getElementById('main-nav');
+const actionBar = document.querySelector('.action_bar');
+const itemsContainer = document.querySelector('.items-container');
+
+hamburgerBtn.addEventListener('click', () => {
+  navBar.classList.toggle('show');
+  actionBar.classList.toggle('show'); 
+
+  if (itemsContainer.style.marginTop === '490px') {
+    itemsContainer.style.marginTop = '40px'; 
+  } else {
+    itemsContainer.style.marginTop = '490px';
+  }
+});
 
