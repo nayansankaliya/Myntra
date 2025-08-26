@@ -231,3 +231,154 @@ header {
     text-align: center;
     padding: 15px;
 }
+
+/* Hamburger  */
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #282c3f;
+    padding-top: 6px;
+}
+
+/* ================================Mobile Responsive================================== */
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        height: auto;
+    }
+
+    .myntra_home {
+        height: 37px;
+    }
+
+    .logo_container {
+        flex: 1 0 auto;
+        order: 1;
+    }
+
+    .search_bar {
+        order: 2;
+        flex: 2 1 60%;
+        width: 30px;
+    }
+
+
+    .hamburger {
+        display: block;
+        order: 3;
+        flex: 0 0 auto;
+        margin-left: 20px;
+    }
+
+    .nav_bar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_bar a {
+        width: 100%;
+        padding: 12px 0;
+        margin: 0;
+        padding-left: 25px;
+        border-top: 1px solid #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #282c3f;
+        box-sizing: border-box;
+    }
+
+    .nav_bar :last-child {
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav_bar.show {
+        display: flex;
+    }
+
+    .action_bar {
+        order: 4;
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background: #fff;
+    }
+
+    .action_bar.show {
+        display: flex;
+    }
+
+    .action_container {
+        flex: 1;
+        margin-top: 25px;
+    }
+
+    .signin-container {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 370px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer_column {
+        width: 100%;
+    }
+
+    .footer_column h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #222;
+    }
+
+    .footer_column a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    .footer_column a:hover {
+        color: #e53935;
+    }
+
+    footer hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ddd;
+    }
+
+    .copyright {
+        font-size: 13px;
+        text-align: center;
+        padding: 12px 0;
+        color: #777;
+    }
+}

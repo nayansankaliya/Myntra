@@ -45,3 +45,19 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     confirm("Login successful!");
     window.location.href = "../index.html"; 
 });
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navBar = document.getElementById('main-nav');
+const actionBar = document.querySelector('.action_bar');
+const signinContainer = document.querySelector('.signin-container');
+
+hamburgerBtn.addEventListener('click', () => {
+  navBar.classList.toggle('show');
+  actionBar.classList.toggle('show'); 
+
+  if (signinContainer.style.marginTop === '430px') {
+    signinContainer.style.marginTop = '0px'; 
+  } else {
+    signinContainer.style.marginTop = '430px';
+  }
+});

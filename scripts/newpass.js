@@ -49,3 +49,19 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     }
 
 });
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navBar = document.getElementById('main-nav');
+const actionBar = document.querySelector('.action_bar');
+const newpassContainer = document.querySelector('.newpass-container');
+
+hamburgerBtn.addEventListener('click', () => {
+  navBar.classList.toggle('show');
+  actionBar.classList.toggle('show'); 
+
+  if (newpassContainer.style.marginTop === '430px') {
+    newpassContainer.style.marginTop = '0px'; 
+  } else {
+    newpassContainer.style.marginTop = '430px';
+  }
+});

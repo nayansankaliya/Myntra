@@ -28,3 +28,18 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         window.location.href = "../pages/newpass.html";
     }
 });
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navBar = document.getElementById('main-nav');
+const actionBar = document.querySelector('.action_bar');
+const forgotpassContainer = document.querySelector('.forgotpass-container');
+
+hamburgerBtn.addEventListener('click', () => {
+  navBar.classList.toggle('show');
+  actionBar.classList.toggle('show'); 
+
+  if (forgotpassContainer.style.marginTop === '430px') {
+    forgotpassContainer.style.marginTop = '0px'; 
+  } else {
+    forgotpassContainer.style.marginTop = '430px';
+  }
+});
