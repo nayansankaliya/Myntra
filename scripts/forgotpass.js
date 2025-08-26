@@ -2,30 +2,39 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
   event.preventDefault();
 
   const email = document.getElementById("email").value.trim().toLowerCase();
+  const errorEmail = document.getElementById('error-email');
 
-  document.getElementById('error-email').innerHTML = '';
-
-
-  if (email === '') {
-    const errorMsg = 'Please enter email';
-    document.getElementById('error-email').innerHTML = errorMsg;
-    return;
-  }
+  errorEmail.innerHTML = '';
 
   let isValid = true;
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (email === '') {
-    document.getElementById('error-email').innerHTML = 'Please enter email';
+    errorEmail.innerHTML = 'Please enter email';
     isValid = false;
   } else if (!emailRegex.test(email)) {
-    document.getElementById('error-email').innerHTML = 'Enter a valid email address';
+    errorEmail.innerHTML = 'Enter a valid email address';
     isValid = false;
   }
 
-  if (isValid) {
-    window.location.href = "../pages/newpass.html";
+  if (!isValid) return;
+
+  const storedUserRaw = localStorage.getItem('myntraUser');
+
+  if (!storedUserRaw) {
+    errorEmail.innerHTML = 'No user data found. Please sign up first.';
+    return;
   }
+
+  const storedUser = JSON.parse(storedUserRaw);
+  const storedEmail = storedUser.email.trim().toLowerCase();
+
+  if (email !== storedEmail) {
+    errorEmail.innerHTML = 'Email not found. Please enter the registered email.';
+    return;
+  }
+
+  window.location.href = "../pages/newpass.html";
 });
 
 const hamburgerBtn = document.getElementById('hamburgerBtn');
