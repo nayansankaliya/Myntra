@@ -1,4 +1,3 @@
-
 const CONVENIENCE_FEES = 99;
 let bagItemObjects;
 onLoad();
@@ -49,16 +48,6 @@ function displayBagSummary() {
   </button>
   `;
 }
-// document.addEventListener("DOMContentLoaded", function () {
-//   const menuIcon = document.getElementById("menu-icon");
-//   const navBar = document.getElementById("navbar");
-
-//   menuIcon.addEventListener("click", () => {
-//     navBar.classList.toggle("active");
-//     menuIcon.textContent = navBar.classList.contains("active") ? "close" : "menu";
-//   });
-// });
-
 
 function loadBagItemObjects() {
   console.log(bagItems);
@@ -117,4 +106,3 @@ function generateItemHTML(item) {
     <div class="remove-from-cart" onclick="removeFromBag(${item.id})">×</div>
   </div>`;
 }
-

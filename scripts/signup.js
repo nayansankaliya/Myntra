@@ -75,3 +75,19 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         window.location.href = "../pages/signin.html";
     }
 });
+
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const navBar = document.getElementById('main-nav');
+const actionBar = document.querySelector('.action_bar');
+const signupContainer = document.querySelector('.signup-container');
+
+hamburgerBtn.addEventListener('click', () => {
+  navBar.classList.toggle('show');
+  actionBar.classList.toggle('show'); 
+
+  if (signupContainer.style.marginTop === '430px') {
+    signupContainer.style.marginTop = '0px'; 
+  } else {
+    signupContainer.style.marginTop = '430px';
+  }
+});
