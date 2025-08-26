@@ -74,14 +74,19 @@ const navBar = document.getElementById('main-nav');
 const actionBar = document.querySelector('.action_bar');
 const itemsContainer = document.querySelector('.items-container');
 
-hamburgerBtn.addEventListener('click', () => {
-  navBar.classList.toggle('show');
-  actionBar.classList.toggle('show'); 
+if (hamburgerBtn && navBar && actionBar) {
+  hamburgerBtn.addEventListener('click', () => {
+    navBar.classList.toggle('show');
+    actionBar.classList.toggle('show');
 
-  if (itemsContainer.style.marginTop === '490px') {
-    itemsContainer.style.marginTop = '40px'; 
-  } else {
-    itemsContainer.style.marginTop = '490px';
-  }
-});
+    if (itemsContainer) {
+      if (itemsContainer.style.marginTop === '490px') {
+        itemsContainer.style.marginTop = '40px';
+      } else {
+        itemsContainer.style.marginTop = '490px';
+      }
+    }
+  });
+}
+
 

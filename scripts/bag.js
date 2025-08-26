@@ -107,17 +107,13 @@ function generateItemHTML(item) {
   </div>`;
 }
 const hamburgerButton = document.getElementById('hamburgerBtn');
-const navigationBar = document.getElementById('main-nav');
-const actBar = document.querySelector('.action_bar');
 const bagItemContainer = document.querySelector('.bag-items-container');
 
 hamburgerButton.addEventListener('click', () => {
-  navigationBar.classList.toggle('show');
-  actBar.classList.toggle('show'); 
 
-  if (bagItemContainer.style.marginTop === '490px') {
-    bagItemContainer.style.marginTop = '40px'; 
+  if (bagItemContainer.style.marginTop === '400px') {
+    bagItemContainer.style.marginTop = '0px'; 
   } else {
-    bagItemContainer.style.marginTop = '490px';
+    bagItemContainer.style.marginTop = '400px';
   }
 });
