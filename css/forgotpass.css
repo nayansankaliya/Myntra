@@ -165,7 +165,7 @@ header {
     margin-top: 12px;
 }
 
-#forgotpass-form button:hover {
+#forgotpass-form button:active {
     background: #e6355f;
 }
 

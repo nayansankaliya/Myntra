@@ -172,7 +172,7 @@ header {
     margin-top: 9px;
 }
 
-#signup-form button:hover {
+#signup-form button:active {
     background: #e6355f;
 }
 

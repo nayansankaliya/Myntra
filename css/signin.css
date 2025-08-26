@@ -178,7 +178,7 @@ header {
     margin-top: 9px;
 }
 
-#signin-form button:hover {
+#signin-form button:active {
     background: #e6355f;
 }
 

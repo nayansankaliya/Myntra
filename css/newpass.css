@@ -168,7 +168,7 @@ header {
     margin-top: 9px;
 }
 
-#newpass-form button:hover {
+#newpass-form button:active {
     background: #e6355f;
 }
 
