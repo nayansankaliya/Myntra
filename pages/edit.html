@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="/css/edit.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link href="https://fonts.googleapis.com/css?family=Commissioner:100,200,300,regular,500,600,700,800,900"rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/myntra.svg" type="image/x-icon" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo_container">
+            <a href="/index.html"><img class="myntra_home" src="/assets/myntra_logo.webp" alt="Myntra Home" /></a>
+        </div>
+
+        <div class="nav-wrapper" id="navWrapper">
+            <nav class="nav_bar" id="main-nav">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home</a>
+                <a href="#">Beauty</a>
+                <a href="#">Genz</a>
+                <a href="#">Studio <sup>New</sup></a>
+            </nav>
+        </div>
+
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">search</span>
+            <input class="search_input" placeholder="Search product,brands and more" />
+        </div>
+
+        <div class="action_bar">
+            <div class="action_container profile-container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+
+            <a class="action_container bag" href="#">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+            </a>
+        </div>
+
+        <button class="hamburger" id="hamburgerBtn">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </header>
+
+    <main class="container">
+        <div class="account">
+            <h3>Account</h3>
+            <p class="username">Nayan</p>
+        </div>
+
+        <div class="main-row">
+            <aside class="sidebar">
+                <ul>
+                    <li>Overview</li>
+                </ul>
+
+                <h4>ORDERS</h4>
+                <ul>
+                    <li>Orders & Returns</li>
+                </ul>
+
+                <h4>CREDITS</h4>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Myntra Credit</li>
+                    <li>MynCash</li>
+                </ul>
+
+                <h4>ACCOUNT</h4>
+                <ul>
+                    <li class="active">Profile</li>
+                    <li>Saved Cards</li>
+                    <li>Saved UPI</li>
+                    <li>Saved Wallets/BNPL</li>
+                    <li>Addresses</li>
+                    <li>Myntra Insider</li>
+                    <li>Delete Account</li>
+                </ul>
+
+                <h4>LEGAL</h4>
+                <ul>
+                    <li>Terms of Use</li>
+                    <li>Privacy Center</li>
+                </ul>
+            </aside>
+
+            <section class="content">
+                <h2 class="form-heading">Edit Details</h2>
+                <form id="profileForm">
+                    <div class="mo-number">
+                        <div>
+                            <label class="mobile-input">Mobile Number*</label>
+                            <input class="mobile-input border" type="text" value="9016570705" readonly />
+                        </div>
+                        <button type="button" class="btn-secondary">CHANGE</button>
+                    </div>
+
+                    <fieldset>
+                        <legend>Full Name</legend>
+                        <input class="fullname-input border" type="text" value="Nayan" />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input class="email-input border" type="email" placeholder="Email" />
+                    </fieldset>
+
+                    <div class="radio">
+                        <label><input type="radio" name="gender" value="male" /> Male</label>
+                        <label><input type="radio" name="gender" value="female" /> Female</label>
+                    </div>
+
+                    <label>Date of Birth</label>
+                    <input class="date-input" type="text" placeholder="Birthday (dd/mm/yyyy)" />
+
+                    <label>Alternate mobile details</label>
+                    <div class="alt-number">
+                        <span class="num">+91</span>
+                        <input type="tel" placeholder="Mobile Number" pattern="[0-9]{10}" />
+                    </div>
+
+                    <input class="hint-input" type="text" placeholder="Hint name" readonly />
+
+                    <button type="submit" class="btn-primary">SAVE DETAILS</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <div class="footer_column">
+                <h3>ONLINE SHOPPING</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Home & Living</a>
+                <a href="#">Beauty</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Myntra Insider</a>
+            </div>
+            <div class="footer_column">
+                <h3>CUSTOMER POLICIES</h3>
+                <a href="#">Contact US</a>
+                <a href="#">FAQ</a>
+                <a href="#">T&C</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Track Orders</a>
+                <a href="#">Shipping</a>
+                <a href="#">Cancellation</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Grievance Redressal</a>
+            </div>
+            <div class="footer_column">
+                <h3>USEFUL LINKS</h3>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Site Map</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Whitehat</a>
+                <a href="#">Cleartrip</a>
+                <a href="#">Myntra Global</a>
+            </div>
+        </div>
+        <hr />
+        <div class="copyright">© 2025 www.myntra.com. All rights reserved.</div>
+    </footer>
+
+    <script src="/scripts/edit.js"></script>
+</body>
+
+</html>

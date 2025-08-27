@@ -1,0 +1,634 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Commissioner;
+}
+
+/* ================================Header CSS================================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+    padding: 0 4%;
+}
+
+.myntra_home {
+    height: 45px;
+}
+
+.logo_container {
+    margin-left: 4%;
+}
+
+.action_bar {
+    margin-right: 4%;
+}
+
+.nav_bar {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 28px 0;
+    border-bottom: 5px solid #ffffff;
+}
+
+.nav_bar a sup {
+    color: #f54e77;
+    font-size: 9px;
+}
+
+.search_bar {
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+}
+
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+    margin-left: 25px;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 16px;
+    color: black;
+}
+
+/* ================================Main CSS================================== */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 40px 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+/* ================================Header CSS================================== */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b6b1b1;
+    padding: 0 4%;
+}
+
+.myntra_home {
+    height: 45px;
+}
+
+.logo_container {
+    margin-left: 4%;
+}
+
+.action_bar {
+    margin-right: 4%;
+}
+
+.nav_bar {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 28px 0;
+    border-bottom: 5px solid #ffffff;
+}
+
+.nav_bar a sup {
+    color: #f54e77;
+    font-size: 9px;
+}
+
+.search_bar {
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+}
+
+.search_input {
+    color: #696e79;
+    background-color: #f5f5f6;
+    flex-grow: 1;
+    height: 40px;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+}
+
+
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+    margin-left: 25px;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 16px;
+    color: black;
+}
+
+/* ================================Main CSS================================== */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 40px 20px;
+    gap: 20px;
+}
+
+.main-row {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.account {
+    width: 80%;
+    padding: 0 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+}
+
+.account h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.account .username {
+    font-size: 16px;
+    color: #555;
+}
+
+
+aside {
+    border-right: 1px solid #ddd;
+}
+
+.border {
+    border: none;
+}
+
+fieldset {
+    margin-bottom: 33px;
+}
+
+.sidebar {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    flex-shrink: 0;
+}
+
+
+.date-input {
+    border: 1px solid #ddd;
+}
+
+.sidebar h3,
+.sidebar h4 {
+    left: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.sidebar .username {
+    margin-bottom: 15px
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    width: 70%;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li {
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.content {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    flex: 1;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    min-width: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.form-heading {
+    margin-bottom: 30px;
+    padding: 13px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin: 12px 0 5px;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="email"],
+.date-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.hint-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.mo-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    margin-bottom: 33px;
+}
+
+.mobile-input {
+    border: none;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.btn-secondary {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.radio label {
+    padding-top: 9px;
+    height: 35px;
+    width: 300px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.radio input[type="radio"] {
+    opacity: 0;
+}
+
+
+.date-input {
+    margin-bottom: 23px;
+}
+
+.alt-number {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 23px;
+    align-items: center;
+}
+
+.alt-number .num {
+    font-size: 14px;
+}
+
+.alt-number input {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.hint-input {
+    margin-bottom: 23px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #ff3f6c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e0355e;
+}
+
+/* ================================Footer CSS================================== */
+
+.footer_container {
+
+    padding: 30px 0px 40px 0px;
+    background: #FAFBFC;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_column h3 {
+    color: #282c3f;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.footer_column a {
+    color: #696b79;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.copyright {
+    color: #94969f;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Hamburger  */
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #282c3f;
+    padding-top: 6px;
+}
+
+/* ================================Mobile Responsive================================== */
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        height: auto;
+    }
+
+    .myntra_home {
+        height: 37px;
+    }
+
+    .logo_container {
+        flex: 1 0 auto;
+        order: 1;
+    }
+
+    .search_bar {
+        order: 2;
+        flex: 2 1 60%;
+        width: 30px;
+    }
+
+
+    .hamburger {
+        display: block;
+        order: 3;
+        flex: 0 0 auto;
+        margin-left: 20px;
+    }
+
+    .nav_bar {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_bar a {
+        width: 100%;
+        padding: 12px 0;
+        margin: 0;
+        padding-left: 25px;
+        border-top: 1px solid #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #282c3f;
+        box-sizing: border-box;
+    }
+
+    .nav_bar :last-child {
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav_bar.show {
+        display: flex;
+    }
+
+    .action_bar {
+        order: 4;
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background: #fff;
+    }
+
+    .action_bar.show {
+        display: flex;
+    }
+
+    .action_container {
+        flex: 1;
+        margin-top: 25px;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer_column {
+        width: 100%;
+    }
+
+    .footer_column h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #222;
+    }
+
+    .footer_column a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    .footer_column a:hover {
+        color: #e53935;
+    }
+
+    footer hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ddd;
+    }
+
+    .copyright {
+        font-size: 13px;
+        text-align: center;
+        padding: 12px 0;
+        color: #777;
+    }
+
+    .profile-overlay {
+        margin-left: 43px;
+        margin-top: 11px;
+    }
+}
