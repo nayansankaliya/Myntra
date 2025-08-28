@@ -7,10 +7,10 @@ hamburgerBtn.addEventListener('click', () => {
   navBar.classList.toggle('show');
   actionBar.classList.toggle('show');
 
-  if (editContainer.style.marginTop === '430px') {
+  if (editContainer.style.marginTop === '460px') {
     editContainer.style.marginTop = '60px';
   } else {
-    editContainer.style.marginTop = '430px';
+    editContainer.style.marginTop = '460px';
   }
 });
 
