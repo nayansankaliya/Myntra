@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Commissioner ;
+    font-family: Commissioner;
     box-sizing: border-box;
 }
 
@@ -165,6 +165,70 @@ header {
     top: -44px;
     font-weight: 700;
     cursor: pointer;
+}
+
+
+.login-overlay {
+    font-family: Commissioner;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background-color: #fff;
+    width: 250px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    padding: 15px 0;
+    margin-top: 83px;
+}
+
+.login-content h2 {
+    margin: 0 20px 2px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+
+.login-content p {
+    margin: 0 20px 10px;
+    font-size: 13px;
+    color: #666;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section1,
+.section2 {
+    height: 190px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section3 {
+    padding: 10px 0 0;
+}
+
+.login-content a {
+    display: block;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.login-content a:hover {
+    color: #222;
+    font-size: 15px;
+}
+
+.login-content span {
+    font-size: 10px;
+    color: #fff;
+    background-color: #ff3f6c;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-weight: bold;
 }
 
 /* ================================Main CSS================================== */
