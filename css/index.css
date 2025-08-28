@@ -170,9 +170,10 @@ header {
 
 .login-overlay {
     font-family: Commissioner;
+    display: none;
     position: absolute;
     top: 0;
-    right: 50px;
+    right: 40px;
     background-color: #fff;
     width: 250px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);

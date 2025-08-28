@@ -353,7 +353,7 @@ form input[type="email"],
 }
 
 .radio label {
-    padding-top: 9px;
+    padding: 9px;
     height: 35px;
     width: 300px;
     font-size: 14px;
@@ -361,7 +361,7 @@ form input[type="email"],
 }
 
 .radio input[type="radio"] {
-    opacity: 0;
+    opacity: 50%;
 }
 
 

@@ -69,6 +69,25 @@ profileContainer.addEventListener('mouseleave', (e) => {
   }, 100);
 });
 
+const loginContainer = document.querySelector('.login-container');
+const loginOverlay = document.querySelector('.login-overlay');
+
+let infoVisible = false;
+
+loginContainer.addEventListener('mouseenter', () => {
+  loginOverlay.style.display = 'flex';
+  infoVisible = true;
+});
+
+loginContainer.addEventListener('mouseleave', (e) => {
+  setTimeout(() => {
+    if (!loginContainer.matches(':hover')) {
+      loginOverlay.style.display = 'none';
+      infoVisible = false;
+    }
+  }, 100);
+});
+
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const navBar = document.getElementById('main-nav');
 const actionBar = document.querySelector('.action_bar');
@@ -88,5 +107,6 @@ if (hamburgerBtn && navBar && actionBar) {
     }
   });
 }
+
 
 
