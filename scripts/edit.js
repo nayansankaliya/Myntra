@@ -17,4 +17,6 @@ hamburgerBtn.addEventListener('click', () => {
 document.getElementById("profileForm").addEventListener("submit", function (e) {
   e.preventDefault();
   alert("Profile details saved successfully!");
+
+  window.location.href = "../index.html";
 });
