@@ -4,9 +4,6 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
   const emailInput = document.getElementById("email").value.trim().toLowerCase();
   const passwordInput = document.getElementById("password").value.trim();
 
-
-
-
   let isValid = true;
 
   document.getElementById("error-email").innerText = '';

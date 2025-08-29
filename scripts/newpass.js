@@ -4,9 +4,6 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     const newpass = document.getElementById("newpass").value.trim();
     const password = document.getElementById("password").value.trim();
 
-
-
-
     let isValid = true;
 
     if (newpass === '' && password === '') {
