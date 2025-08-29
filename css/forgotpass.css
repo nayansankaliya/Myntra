@@ -91,6 +91,10 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
+.search_input:focus {
+    outline: none;
+}
+
 .action_bar {
     display: flex;
     min-width: 200px;
@@ -150,6 +154,10 @@ header {
     padding: 10px;
     border: 1px solid #737171;
     border-radius: 5px;
+}
+
+#forgotpass-form input:focus {
+    outline: none;
 }
 
 #forgotpass-form button {
@@ -238,6 +246,10 @@ header {
         justify-content: space-between;
         padding: 10px;
         height: auto;
+    }
+
+    .search_input:focus {
+        outline: none;
     }
 
     .myntra_home {

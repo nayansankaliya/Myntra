@@ -84,6 +84,10 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
+.search_input:focus {
+    outline: none;
+}
+
 .profile-container {
     position: relative;
 }
@@ -412,6 +416,10 @@ main {
         justify-content: space-between;
         padding: 10px;
         height: auto;
+    }
+
+    .search_input:focus {
+        outline: none;
     }
 
     .myntra_home {

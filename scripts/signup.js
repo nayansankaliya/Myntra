@@ -7,12 +7,6 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     const contact = document.getElementById("contact").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    document.getElementById('error-fname').innerHTML = '';
-    document.getElementById('error-lname').innerHTML = '';
-    document.getElementById('error-email').innerHTML = '';
-    document.getElementById('error-contact').innerHTML = '';
-    document.getElementById('error-password').innerHTML = '';
-
     if (fname === '' && lname === '' && email === '' && contact === '' && password === '') {
         const errorMsg = 'Please fill all the fields';
         document.getElementById('error-fname').innerHTML = errorMsg;
@@ -25,16 +19,17 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
 
     let isValid = true;
 
+    document.getElementById('error-fname').innerHTML = '';
     if (fname === '') {
         document.getElementById('error-fname').innerHTML = 'Please enter first name';
         isValid = false;
     }
-
-     if (lname === '') {
+    document.getElementById('error-lname').innerHTML = '';
+    if (lname === '') {
         document.getElementById('error-lname').innerHTML = 'Please enter last name';
         isValid = false;
     }
-
+    document.getElementById('error-email').innerHTML = '';
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email === '') {
         document.getElementById('error-email').innerHTML = 'Please enter email';
@@ -43,7 +38,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         document.getElementById('error-email').innerHTML = 'Enter a valid email address';
         isValid = false;
     }
-
+    document.getElementById('error-contact').innerHTML = '';
     const contactRegex = /^\d{10}$/;
     if (contact === '') {
         document.getElementById('error-contact').innerHTML = 'Please enter contact number';
@@ -52,7 +47,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         document.getElementById('error-contact').innerHTML = 'Enter a valid 10-digit contact number';
         isValid = false;
     }
-
+    document.getElementById('error-password').innerHTML = '';
     if (password === '') {
         document.getElementById('error-password').innerHTML = 'Please enter password';
         isValid = false;
@@ -82,12 +77,12 @@ const actionBar = document.querySelector('.action_bar');
 const signupContainer = document.querySelector('.signup-container');
 
 hamburgerBtn.addEventListener('click', () => {
-  navBar.classList.toggle('show');
-  actionBar.classList.toggle('show'); 
+    navBar.classList.toggle('show');
+    actionBar.classList.toggle('show');
 
-  if (signupContainer.style.marginTop === '430px') {
-    signupContainer.style.marginTop = '0px'; 
-  } else {
-    signupContainer.style.marginTop = '430px';
-  }
+    if (signupContainer.style.marginTop === '430px') {
+        signupContainer.style.marginTop = '0px';
+    } else {
+        signupContainer.style.marginTop = '430px';
+    }
 });

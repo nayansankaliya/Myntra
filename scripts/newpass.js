@@ -4,8 +4,8 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
     const newpass = document.getElementById("newpass").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    document.getElementById('error-newpass').innerHTML = '';
-    document.getElementById('error-password').innerHTML = '';
+
+
 
     let isValid = true;
 
@@ -15,7 +15,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         document.getElementById('error-password').innerHTML = errorMsg;
         return;
     }
-
+    document.getElementById('error-newpass').innerHTML = '';
     if (newpass === '') {
         document.getElementById('error-newpass').innerHTML = 'Please enter new password';
         isValid = false;
@@ -23,7 +23,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         document.getElementById('error-newpass').innerHTML = 'Password must be at least 6 characters';
         isValid = false;
     }
-
+    document.getElementById('error-password').innerHTML = '';
     if (password === '') {
         document.getElementById('error-password').innerHTML = 'Please enter confirm the password';
         isValid = false;
@@ -32,7 +32,7 @@ document.getElementById("btn-submit").addEventListener("click", function (event)
         isValid = false;
     }
 
-    if (isValid && newpass !== password) {
+    if (newpass !== password) {
         document.getElementById('error-password').innerHTML = 'New  and confirm password should be same';
         isValid = false;
     }
@@ -56,12 +56,12 @@ const actionBar = document.querySelector('.action_bar');
 const newpassContainer = document.querySelector('.newpass-container');
 
 hamburgerBtn.addEventListener('click', () => {
-  navBar.classList.toggle('show');
-  actionBar.classList.toggle('show'); 
+    navBar.classList.toggle('show');
+    actionBar.classList.toggle('show');
 
-  if (newpassContainer.style.marginTop === '430px') {
-    newpassContainer.style.marginTop = '0px'; 
-  } else {
-    newpassContainer.style.marginTop = '430px';
-  }
+    if (newpassContainer.style.marginTop === '430px') {
+        newpassContainer.style.marginTop = '0px';
+    } else {
+        newpassContainer.style.marginTop = '430px';
+    }
 });

@@ -90,6 +90,10 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
+.search_input:focus {
+    outline: none;
+}
+
 .bag {
     color: black;
 }
@@ -153,6 +157,10 @@ header {
     padding: 10px;
     border: 1px solid #afafaf;
     border-radius: 5px;
+}
+
+#newpass-form input:focus {
+  outline: none;
 }
 
 #newpass-form button {
@@ -242,6 +250,10 @@ header {
         justify-content: space-between;
         padding: 10px;
         height: auto;
+    }
+
+    .search_input:focus {
+        outline: none;
     }
 
     .myntra_home {

@@ -88,6 +88,10 @@ main {
     border-radius: 0 4px 4px 0;
 }
 
+.search_input:focus {
+    outline: none;
+}
+
 .profile-container {
     position: relative;
 }
@@ -223,6 +227,7 @@ aside {
 
 fieldset {
     margin-bottom: 33px;
+    border: 1px solid #ddd;
 }
 
 .sidebar {
@@ -329,8 +334,13 @@ form input[type="email"],
 .mobile-input {
     border: none;
     margin-left: 10px;
-    width: 100%;
+    /* width: 100%; */
 }
+
+.mobile-lbl {
+   margin-left: 17px;
+}
+
 
 .btn-secondary {
     padding: 10px 14px;
@@ -380,6 +390,7 @@ form input[type="email"],
 
 .alt-number .num {
     font-size: 14px;
+    margin: 0px 10px;
 }
 
 .alt-number input {
@@ -463,6 +474,10 @@ form input[type="email"],
         justify-content: space-between;
         padding: 10px;
         height: auto;
+    }
+
+    .search_input:focus {
+        outline: none;
     }
 
     .myntra_home {
@@ -561,10 +576,11 @@ form input[type="email"],
 
     .content {
         width: 100%;
+        border: none;
     }
 
     .form-heading {
-        font-size: 20px;
+        display: none;
     }
 
     .mo-number {
@@ -596,7 +612,7 @@ form input[type="email"],
     }
 
     .alt-number .num {
-        margin-right: 10px;
+        margin: 0px 10px;
     }
 
     .hint-input {

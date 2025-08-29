@@ -91,6 +91,10 @@ header {
     border-radius: 0 4px 4px 0;
 }
 
+.search_input:focus {
+    outline: none;
+}
+
 .action_bar {
     display: flex;
     min-width: 200px;
@@ -128,6 +132,10 @@ header {
 #signin-form h1 {
     text-align: center;
     margin-bottom: 20px;
+}
+
+#signin-form input:focus {
+  outline: none;
 }
 
 .form-group {
@@ -252,6 +260,10 @@ header {
         justify-content: space-between;
         padding: 10px;
         height: auto;
+    }
+
+    .search_input:focus {
+        outline: none;
     }
 
     .myntra_home {
